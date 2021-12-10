@@ -1,16 +1,22 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { CalculadoraModule } from './calculadora';
+import { NO_ERRORS_SCHEMA } from '@angular/core'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        CalculadoraModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
       ],
+      schemas: [
+        NO_ERRORS_SCHEMA
+    ],
     }).compileComponents();
   });
 
