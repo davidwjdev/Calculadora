@@ -5,12 +5,9 @@
  * @autor David
  * @since 1.0.0
  */
-import { ClassField } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CalculadoraService {
   /*
    define as constantes utilizadas
